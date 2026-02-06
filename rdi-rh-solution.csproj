@@ -16,4 +16,10 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="10.0.0" />
   </ItemGroup>
 
+  <!-- Exclude auxiliary project/folder that contains a separate Program.cs to avoid duplicate top-level statements
+       and duplicated assembly attributes produced in its obj output. -->
+  <ItemGroup>
+    <Compile Remove="rh-solution-rdi\**\*.cs" />
+  </ItemGroup>
+
 </Project>
