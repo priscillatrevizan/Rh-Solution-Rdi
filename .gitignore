@@ -1,4 +1,11 @@
-obj/
+# Build artifacts
 bin/
+obj/
 .vs/
-rdi-rh-solution.csproj.user
+
+# User-specific files
+*.csproj.user
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
